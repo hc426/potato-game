@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bl1ynu5d6i80k"]
+
+[ext_resource type="Theme" uid="uid://c4nvbk1i6vak7" path="res://duringRun/themes/pauseMenu_theme.tres" id="1_qug6k"]
+
+[node name="CenterContainer" type="CenterContainer" unique_id=89597678]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=795329782]
+layout_mode = 2
+theme = ExtResource("1_qug6k")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1207946606]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1092272628]
+layout_mode = 2
+text = "Paused - Menu"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=2095490515]
+layout_mode = 2
+text = "Continue"
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1864889896]
+layout_mode = 2
+text = "Settings"
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1786446658]
+layout_mode = 2
+text = "Return to Home"
+
+[node name="Button4" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1331465914]
+layout_mode = 2
+text = "Start New Run"

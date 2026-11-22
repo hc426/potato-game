@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://1dax5s3yit20"]
+
+[node name="BattleUi" type="Control" unique_id=909504227]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopMenuBar" type="PanelContainer" parent="." unique_id=1977012695]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="TopMenuBar" unique_id=536195442]
+layout_mode = 2
+text = "top bar menu "
+horizontal_alignment = 2
+
+[node name="BottomUIPanel" type="PanelContainer" parent="." unique_id=197609625]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -312.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BottomUIContainer" type="VBoxContainer" parent="BottomUIPanel" unique_id=878149415]
+layout_mode = 2
+
+[node name="LockedDicePanel" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer" unique_id=1723281910]
+layout_mode = 2
+
+[node name="LockedDiceBar" type="HBoxContainer" parent="BottomUIPanel/BottomUIContainer/LockedDicePanel" unique_id=1039971916]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/LockedDicePanel/LockedDiceBar" unique_id=991919167]
+layout_mode = 2
+text = "locked dice go here"
+
+[node name="RollButtonPanel" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer" unique_id=138554333]
+layout_mode = 2
+
+[node name="DeckInfo+RollButton" type="HBoxContainer" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel" unique_id=1271328677]
+layout_mode = 2
+alignment = 1
+
+[node name="DrawPile" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel/DeckInfo+RollButton" unique_id=1989970915]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel/DeckInfo+RollButton/DrawPile" unique_id=2059641839]
+layout_mode = 2
+text = "draw pile info"
+
+[node name="TextureButton" type="Button" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel/DeckInfo+RollButton" unique_id=2089050352]
+layout_mode = 2
+text = "ROLL"
+
+[node name="DiscardPile" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel/DeckInfo+RollButton" unique_id=616926231]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/RollButtonPanel/DeckInfo+RollButton/DiscardPile" unique_id=671060555]
+layout_mode = 2
+text = "discard pile info"
+
+[node name="HandPanel" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer" unique_id=247919815]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel" unique_id=1795887194]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer" unique_id=447606005]
+layout_mode = 2
+
+[node name="PHCard" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=2112856828]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard" unique_id=545155995]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
+
+[node name="PHCard2" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=662652994]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard2" unique_id=783153030]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
+
+[node name="PHCard3" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=452187966]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard3" unique_id=1921316010]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
+
+[node name="PHCard4" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=742875427]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard4" unique_id=101826421]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
+
+[node name="PHCard5" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=2085434176]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard5" unique_id=489054558]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
+
+[node name="PHCard6" type="PanelContainer" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer" unique_id=328495408]
+custom_minimum_size = Vector2(150, 250)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="BottomUIPanel/BottomUIContainer/HandPanel/ScrollContainer/HBoxContainer/PHCard6" unique_id=410306547]
+layout_mode = 2
+text = "CARD"
+horizontal_alignment = 1
